@@ -1,0 +1,244 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav img,
+footer img {
+    width: 40px;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #faedcd;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 10px;
+    gap: 20px;
+
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover {
+    display: block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    color: white;
+    text-shadow: 1px 1px rgb(0 0 0 /0.8);
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-image: url(../img/header.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    height: calc(40vh - 10px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header a {
+
+    color: white;
+    gap: 10px;
+}
+
+header a:hover {
+    color: black;
+    background-color: white;
+    border-bottom: 2px solid white;
+    padding: 5px 15px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+.product article {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.product a {
+    color: black;
+    padding: 10px;
+}
+
+.product a:hover {
+    color: white;
+    background-color: black;
+    padding: 5px 15px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    background-color: #faedcd;
+    padding: 20px;
+    justify-content: space-between;
+
+
+}
+
+
+
+footer a {
+    color: black;
+
+}
+
+footer a:hover {
+    padding: 5px 10px;
+
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: relative;
+}
+
+
+section article img {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.center-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #faedcd;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.formfield {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+}
+
+#contact.html {
+    background-color: #faedcd;
+}
+
+.full-name,
+.city-date {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .formfield {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .full-name {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+}
