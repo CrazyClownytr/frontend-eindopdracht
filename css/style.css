@@ -52,12 +52,13 @@ nav a {
 
 nav a:hover {
     display: block;
-    padding: 10px 25px;
+
     border-radius: 5px;
-    color: white;
-    background-color: black;
+    color: #d4a373;
+
     text-align: center;
     position: relative;
+    transition: color 0.5s, background-color 0.6s;
 }
 
 header {
@@ -70,7 +71,7 @@ header {
     background-size: cover;
     background-position: center;
     padding: 30px;
-    height: calc(40vh - 10px);
+    height: calc(50vh - 10px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -81,17 +82,23 @@ header a {
 
     color: white;
     gap: 10px;
+
 }
 
 header a:hover {
     color: black;
     background-color: white;
     border-bottom: 2px solid white;
-    padding: 5px 15px;
+    padding: 5px 10px;
     text-align: center;
     position: relative;
     border-radius: 5px;
+    transition: color 0.5s, background-color 0.6s;
 }
+
+
+
+
 
 h3 {
     text-align: center;
@@ -124,13 +131,30 @@ h3 {
 }
 
 .product a:hover {
-    color: white;
-    background-color: black;
+    color: #d4a373;
+
     padding: 5px 15px;
     text-align: center;
     position: relative;
     border-radius: 5px;
+    transition: color 0.5s, background-color 0.6s;
 
+}
+
+.card {
+
+    background-color: white;
+    transform-origin: center;
+    transition: all 1s ease;
+    border-radius: 2px;
+}
+
+.card:hover {
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 0.4);
+    transform: scale(1.1);
 }
 
 
@@ -150,22 +174,31 @@ footer {
 
 }
 
+.logo-link {
+    display: flex;
+    flex-direction: row;
+}
 
-
-footer a {
+.footer-link a {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
     color: black;
+    gap: 10px;
 
 }
 
-footer a:hover {
-    padding: 5px 10px;
-
+.footer-link a:hover {
+    padding: 5px;
     border-radius: 3px;
     color: white;
     background-color: black;
     text-align: center;
     position: relative;
+    transition: color 0.5s, background-color 0.6s;
 }
+
+
 
 
 section article img {
@@ -291,6 +324,16 @@ span {
 
 
 @media (max-width: 480px) {
+    body {
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        margin-left: 100Spx;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
@@ -312,15 +355,19 @@ span {
         justify-content: center;
     }
 
-    .formfield {
+    .product {
         display: flex;
-        flex: 1;
         flex-direction: column;
     }
 
-    .full-name {
+    footer {
         display: flex;
         flex: 1;
         flex-direction: column;
+        justify-content: space-between;
     }
+
+
+
+
 }
