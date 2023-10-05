@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="center-container">
+            <section>
+                <h1>Formulier</h1>
+            </section>
+
+            <form class="formfield">
+                <div class="full-name">
+                    <div class="name">
+                        <label for="first-name">Voornaam</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Voornaam..." required>
+                    </div>
+                    <div class="name">
+                        <label for="last-name">Achternaam</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Achternaam..." required>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="city-date">
+                    <label for="city">Woonplaats</label>
+                    <input type="text" name="city" id="city" placeholder="Woonplaats..." required>
+
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </div>
+                <div class="subject">
+                    <span for="subject">Onderwerp</span>
+                    <select id="subject" name="subject">
+                        <option value="" disabled selected>Kies onderwerp van het bericht</option>
+                        <option value="0">Frenkie</option>
+                        <option value="1">Pedri</option>
+                        <option value="2">Gavi</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="message">Bericht</label>
+                    <input type="text" name="message" id="message" required>
+                </div>
+
+                <span for="mail">Inschrijven voor een brief?</span>
+                <div class="radio">
+                    <input type="radio" id="mail" name="mail" value="mail">
+                    <label for="mail">Ja</label>
+
+
+                    <input type="radio" id="mail" name="mail" value="mail">
+                    <label for="mail">Nee</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="agree" name="agree" value="agree">
+                    <label for="agree">Ik ga akkoord met de algemene voorwaarden</label>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Verzenden</button>
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+</body>
