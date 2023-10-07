@@ -16,7 +16,7 @@
                 <h1>Formulier</h1>
             </section>
 
-            <form class="formfield">
+            <form>
                 <div class="full-name">
                     <div class="name">
                         <label for="first-name">Voornaam</label>
@@ -28,18 +28,23 @@
                     </div>
                 </div>
 
-                <div class="email">
+                <div class="formfield">
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                 </div>
-                <div class="city-date">
-                    <label for="city">Woonplaats</label>
-                    <input type="text" name="city" id="city" placeholder="Woonplaats..." required>
 
-                    <label for="birthdate">Birthdate</label>
-                    <input type="date" name="birthdate" id="birthdate" required>
+                <div class="city-date">
+                    <div class="city">
+                        <label for="city">Woonplaats</label>
+                        <input type="text" name="city" id="city" placeholder="Woonplaats..." required>
+                    </div>
+                    <div class="date">
+                        <label for="birthdate">Birthdate</label>
+                        <input type="date" name="birthdate" id="birthdate" required>
+                    </div>
                 </div>
-                <div class="subject">
+
+                <div class="formfield">
                     <span for="subject">Onderwerp</span>
                     <select id="subject" name="subject">
                         <option value="" disabled selected>Kies onderwerp van het bericht</option>
@@ -48,20 +53,26 @@
                         <option value="2">Gavi</option>
                     </select>
                 </div>
+
                 <div class="message">
                     <label for="message">Bericht</label>
                     <input type="text" name="message" id="message" required>
                 </div>
 
+
                 <span for="mail">Inschrijven voor een brief?</span>
-                <div class="radio">
+                <div class="mail">
+
+
                     <input type="radio" id="mail" name="mail" value="mail">
                     <label for="mail">Ja</label>
 
 
                     <input type="radio" id="mail" name="mail" value="mail">
                     <label for="mail">Nee</label>
+
                 </div>
+
                 <div class="checkbox">
                     <input type="checkbox" id="agree" name="agree" value="agree">
                     <label for="agree">Ik ga akkoord met de algemene voorwaarden</label>
