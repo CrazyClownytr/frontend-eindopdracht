@@ -9,7 +9,6 @@ h1,
 h2,
 h3 {
     font-family: 'Young Serif', serif;
-    font-size: 2rem;
 }
 
 nav,
@@ -26,9 +25,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
 
 nav img,
 footer img {
@@ -46,27 +43,21 @@ nav {
     flex-direction: row;
     background-color: #faedcd;
     justify-content: space-between;
-    padding: 2vh;
-    padding-right: 1vh;
-    gap: 2vh;
-
+    padding: 10px;
 }
 
 .nav-logo {
     display: flex;
     flex-direction: row;
     justify-content: left;
-
 }
 
 .nav-link {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-top: 2vh;
-    padding-right: 1vh;
-    gap: 2vh;
-
+    padding: 10px;
+    gap: 10px;
 }
 
 nav a {
@@ -89,22 +80,17 @@ header {
     border-bottom: 1px solid black;
     background-image: url(../img/header.JPG);
     background-size: cover;
+    object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 3vh;
-    padding-top: 5vh;
+    padding: 10px;
     height: calc(50vh - 10px);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-
 }
 
 
 header a {
     color: black;
-    gap: 2vh;
+    gap: 5px;
     background-color: white;
     padding: 10px;
     border-radius: 5px;
@@ -116,11 +102,20 @@ header a:hover {
     color: grey;
     text-align: center;
     position: relative;
-    transition: color 0.5s, background-color 0.6s;
+    transition: color 0.5s;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 h2 {
     text-align: center;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 .product {
@@ -168,13 +163,6 @@ h2 {
     border-radius: 2px;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 0.4);
     transform: scale(1.1);
-}
-
-
-form {
-    padding: 2vh;
-    display: flex;
-    flex-direction: column;
 }
 
 footer {
@@ -314,8 +302,17 @@ button:hover {
     transition: color 1.2s;
 }
 
+input:invalid:not(:placeholder-shown) {
+    border: 3px solid red;
+}
+
+input:valid {
+    border: 3px solid green;
+    background-color: lightgreen;
+}
+
 button:active {
-    background-color: red;
+    background-color: green;
 }
 
 
@@ -326,7 +323,7 @@ button:active {
     }
 
     header {
-        padding-top: 10vh;
+        height: 50vh;
     }
 
     h1 {
@@ -337,34 +334,27 @@ button:active {
     nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-link {
-        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        text-align: center;
     }
 
-    .logo {
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-    }
 
     .product {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     footer {
         display: flex;
         flex: 1;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .main-form {
